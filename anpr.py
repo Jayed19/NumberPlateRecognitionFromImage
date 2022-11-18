@@ -7,11 +7,14 @@ import pytesseract
 import cv2 
 #pip install opencv-python
 import numpy as np
+from matplotlib import pyplot as plt
+
+img = "IMG_20221104_081626_9.jpg"
 
 
 
 pytesseract.pytesseract.tesseract_cmd = (r'C:\Program Files\Tesseract-OCR\tesseract.exe')
 
-img = "IMG_20221104_081224_8.jpg"
+
 
 print(pytesseract.image_to_string(Image.open(img),lang="ben"))
