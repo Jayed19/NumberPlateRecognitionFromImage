@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import imutils
 
-image=cv2.imread("IMG_20221104_081626_9.jpg")
+image=cv2.imread("test.jpg")
 image=imutils.resize(image,width=500)
 gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 smooth_gray=cv2.bilateralFilter(gray,11,17,17)
